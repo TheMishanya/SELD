@@ -1,0 +1,15 @@
+<resources>
+    <string-array name="catNames">
+        <item>Замок 1</item>
+        <item>Замок 2</item>
+        <item>Замок 3</item>
+    </string-array>
+    <string name="app_name">SELD</string>
+    <string name="title_home">Управление замком</string>
+    <string name="title_dashboard">Устройства</string>
+    <string name="title_notifications">Профиль</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>

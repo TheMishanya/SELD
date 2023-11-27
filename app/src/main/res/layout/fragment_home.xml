@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:scrollbarSize="10dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/textcloseopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/choosedevice"
+        android:layout_width="323dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="1dp"
+        android:entries="@array/catNames"
+        android:scrollbarSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/imageClose"
+        android:layout_width="290dp"
+        android:layout_height="351dp"
+        android:src="@drawable/close1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textcloseopen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosedevice" />
+
+    <ImageView
+
+        android:id="@+id/imageOpen"
+        android:layout_width="290dp"
+        android:layout_height="350dp"
+        android:src="@drawable/open1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textcloseopen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosedevice"
+        app:layout_constraintVertical_bias="0.513" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
